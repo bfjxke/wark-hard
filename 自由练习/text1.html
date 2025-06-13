@@ -52,11 +52,68 @@
         }
 
         section:hover{
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.15);
         }
         section h2{
             color: #007bff;
         }
+        table{
+            width: 100%;
+            border-collapse: collapse; /* 表格边框合并 */
+            margin-top: 15px;
+        }
+        table th,table td{
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        table th{
+            background-color: #f1f1f1;
+            font-weight: 600;
+            color: #333;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        ul li{
+            margin: 12px 0;
+            font-size: 1.1rem;
+        }
+
+        form{
+            max-width: 650px;
+            margin: 20 auto;
+        }
+        form label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        form input,form button,form textarea{
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+        }
+        form button{
+            background-color: #007bffb2;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover{
+            background-color: #0056b3;
+        }
+        form button:active{
+            background-color: #004085;
+        }
+
 
    </style>
 </head>
@@ -67,10 +124,10 @@
     </header>
 
     <nav>
-        <a href="about">About</a>
-        <a href="schedule">Schedule</a>
-        <a href="speakers">Speakers</a>
-        <a href="contact">Contact</a>
+        <a href="about" target="_blank">About</a>
+        <a href="schedule" target="_blank">Schedule</a>
+        <a href="speakers" target="_blank">Speakers</a>
+        <a href="contact" target="_blank">Contact</a>
     </nav>
 
     <section id="about">
